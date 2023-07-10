@@ -11,6 +11,9 @@
 		E716631C2A5C879800282463 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E716631B2A5C879800282463 /* ContentView.swift */; };
 		E716631E2A5C879900282463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E716631D2A5C879900282463 /* Assets.xcassets */; };
 		E71663212A5C879900282463 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71663202A5C879900282463 /* Preview Assets.xcassets */; };
+		E716632E2A5C911900282463 /* GamesListStoryboardUIKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E716632D2A5C911900282463 /* GamesListStoryboardUIKit.storyboard */; };
+		E71663302A5C914200282463 /* GamesListScreenSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E716632F2A5C914200282463 /* GamesListScreenSwiftUI.swift */; };
+		E71663322A5C955800282463 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71663312A5C955800282463 /* GamesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E716631B2A5C879800282463 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E716631D2A5C879900282463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71663202A5C879900282463 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E716632D2A5C911900282463 /* GamesListStoryboardUIKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamesListStoryboardUIKit.storyboard; sourceTree = "<group>"; };
+		E716632F2A5C914200282463 /* GamesListScreenSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GamesListScreenSwiftUI.swift; path = SwiftUIScreen/GamesListScreenSwiftUI.swift; sourceTree = "<group>"; };
+		E71663312A5C955800282463 /* GamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GamesListViewController.swift; path = UIKitScreen/GamesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +59,11 @@
 			children = (
 				E71663192A5C879800282463 /* iOS_Portfolio_ProjectApp.swift */,
 				E716631B2A5C879800282463 /* ContentView.swift */,
+				E716632F2A5C914200282463 /* GamesListScreenSwiftUI.swift */,
 				E716631D2A5C879900282463 /* Assets.xcassets */,
 				E716631F2A5C879900282463 /* Preview Content */,
+				E716632D2A5C911900282463 /* GamesListStoryboardUIKit.storyboard */,
+				E71663312A5C955800282463 /* GamesListViewController.swift */,
 			);
 			path = "iOS Portfolio Project";
 			sourceTree = "<group>";
@@ -126,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E71663212A5C879900282463 /* Preview Assets.xcassets in Resources */,
+				E716632E2A5C911900282463 /* GamesListStoryboardUIKit.storyboard in Resources */,
 				E716631E2A5C879900282463 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71663322A5C955800282463 /* GamesListViewController.swift in Sources */,
 				E716631C2A5C879800282463 /* ContentView.swift in Sources */,
+				E71663302A5C914200282463 /* GamesListScreenSwiftUI.swift in Sources */,
 				E716631A2A5C879800282463 /* iOS_Portfolio_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

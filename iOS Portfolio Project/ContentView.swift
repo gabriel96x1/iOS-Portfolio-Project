@@ -9,22 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-            Button("Swift UI portfolio") {
-                
-            }
-                .padding(8)
-            Button("UiKit portfolio") {
-                
-            }
-                .padding(8)
+        NavigationView(content: {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("Hello, world!")
+                NavigationLink(destination: GamesListScreenSwiftUI()) {
+                    Text("Swift UI portfolio")
+                        .padding(8)
+                }
+                NavigationLink(destination: GamesListViewController()) {
+                    Text("UiKit portfolio")
+                        .padding(8)
+                }
 
-        }
-        .padding()
+            }
+            .padding()
+        })
     }
 }
 
