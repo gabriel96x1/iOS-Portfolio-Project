@@ -14,6 +14,8 @@
 		E716632E2A5C911900282463 /* GamesListStoryboardUIKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E716632D2A5C911900282463 /* GamesListStoryboardUIKit.storyboard */; };
 		E71663302A5C914200282463 /* GamesListScreenSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E716632F2A5C914200282463 /* GamesListScreenSwiftUI.swift */; };
 		E71663322A5C955800282463 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71663312A5C955800282463 /* GamesListViewController.swift */; };
+		E71663342A5CCA5C00282463 /* BrewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71663332A5CCA5C00282463 /* BrewModel.swift */; };
+		E71663362A5CD5A000282463 /* BrewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71663352A5CD5A000282463 /* BrewItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +25,10 @@
 		E716631D2A5C879900282463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71663202A5C879900282463 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E716632D2A5C911900282463 /* GamesListStoryboardUIKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamesListStoryboardUIKit.storyboard; sourceTree = "<group>"; };
-		E716632F2A5C914200282463 /* GamesListScreenSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GamesListScreenSwiftUI.swift; path = SwiftUIScreen/GamesListScreenSwiftUI.swift; sourceTree = "<group>"; };
-		E71663312A5C955800282463 /* GamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GamesListViewController.swift; path = UIKitScreen/GamesListViewController.swift; sourceTree = "<group>"; };
+		E716632F2A5C914200282463 /* GamesListScreenSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListScreenSwiftUI.swift; sourceTree = "<group>"; };
+		E71663312A5C955800282463 /* GamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
+		E71663332A5CCA5C00282463 /* BrewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewModel.swift; sourceTree = "<group>"; };
+		E71663352A5CD5A000282463 /* BrewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,13 +61,13 @@
 		E71663182A5C879800282463 /* iOS Portfolio Project */ = {
 			isa = PBXGroup;
 			children = (
+				E71663392A5CF16500282463 /* StoryboardScreen */,
+				E71663382A5CF13700282463 /* Common */,
+				E71663372A5CF10900282463 /* SwiftUIScreen */,
 				E71663192A5C879800282463 /* iOS_Portfolio_ProjectApp.swift */,
 				E716631B2A5C879800282463 /* ContentView.swift */,
-				E716632F2A5C914200282463 /* GamesListScreenSwiftUI.swift */,
 				E716631D2A5C879900282463 /* Assets.xcassets */,
 				E716631F2A5C879900282463 /* Preview Content */,
-				E716632D2A5C911900282463 /* GamesListStoryboardUIKit.storyboard */,
-				E71663312A5C955800282463 /* GamesListViewController.swift */,
 			);
 			path = "iOS Portfolio Project";
 			sourceTree = "<group>";
@@ -74,6 +78,33 @@
 				E71663202A5C879900282463 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E71663372A5CF10900282463 /* SwiftUIScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E71663352A5CD5A000282463 /* BrewItem.swift */,
+				E716632F2A5C914200282463 /* GamesListScreenSwiftUI.swift */,
+			);
+			name = SwiftUIScreen;
+			path = ../SwiftUIScreen;
+			sourceTree = "<group>";
+		};
+		E71663382A5CF13700282463 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E71663332A5CCA5C00282463 /* BrewModel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E71663392A5CF16500282463 /* StoryboardScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E716632D2A5C911900282463 /* GamesListStoryboardUIKit.storyboard */,
+				E71663312A5C955800282463 /* GamesListViewController.swift */,
+			);
+			path = StoryboardScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +180,9 @@
 			files = (
 				E71663322A5C955800282463 /* GamesListViewController.swift in Sources */,
 				E716631C2A5C879800282463 /* ContentView.swift in Sources */,
+				E71663362A5CD5A000282463 /* BrewItem.swift in Sources */,
 				E71663302A5C914200282463 /* GamesListScreenSwiftUI.swift in Sources */,
+				E71663342A5CCA5C00282463 /* BrewModel.swift in Sources */,
 				E716631A2A5C879800282463 /* iOS_Portfolio_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
