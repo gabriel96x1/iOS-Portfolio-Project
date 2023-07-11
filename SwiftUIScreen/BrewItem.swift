@@ -11,13 +11,15 @@ struct BrewItem: View {
     var brew: BrewModel
     
     var body: some View {
-        VStack {
+        VStack(alignment: .center) {
             Text(brew.name)
             Text(brew.city)
             Text(brew.country ?? "")
             Text(brew.url ?? "")
-            Text(brew.id)
-
-        }
+            Divider()
+        }.frame(maxWidth: .infinity)
+            .onTapGesture {
+                print("Clicked")
+            }
     }
 }

@@ -11,8 +11,18 @@ import SwiftUI
 struct GamesListViewController: UIViewControllerRepresentable {
 
     func makeUIViewController(context: Context) -> some UIViewController {
-        let storyboard = UIStoryboard(name: "GamesListStoryboardUIKit", bundle: Bundle.main)
-        let controller = storyboard.instantiateViewController(identifier: "GamesListStoryboardUIKitId")
+        let controller = UIViewController()
+        
+        
+        let label = UILabel()
+        label.text = "UIKit Screeeen!"
+        
+        label.center.x = controller.view.center.x
+        label.center.y = controller.view.center.y
+                
+        // Agregar la etiqueta a la vista del controlador
+        controller.view.addSubview(label)
+        
         return controller
     }
     
