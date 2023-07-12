@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GamesListScreenSwiftUI: View {
+    
     @State var brews: [BrewModel] = [];
 
     var body: some View {

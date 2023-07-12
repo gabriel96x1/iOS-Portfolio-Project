@@ -15,8 +15,12 @@ struct ContentView: View {
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
                 Text("Hello, world!")
+                NavigationLink(destination: NotesWCoreData()) {
+                    Text("Swift UI Notes + CoreData")
+                        .padding(8)
+                }.navigationTitle("Main Menu")
                 NavigationLink(destination: GamesListScreenSwiftUI()) {
-                    Text("Swift UI portfolio")
+                    Text("Swift UI API Call + LazyVStack")
                         .padding(8)
                 }
                 NavigationLink(destination: GamesListViewController()) {

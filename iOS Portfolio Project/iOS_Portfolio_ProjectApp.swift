@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct iOS_Portfolio_ProjectApp: App {
+    
+    @StateObject private var persistance: Persistance = Persistance()
+    
     var body: some Scene {
+
         WindowGroup {
             ContentView()
+                .environmentObject(persistance)
+                .environment(\.managedObjectContext, persistance.container.viewContext)
         }
     }
 }

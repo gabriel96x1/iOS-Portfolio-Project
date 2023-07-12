@@ -16,6 +16,9 @@
 		E71663342A5CCA5C00282463 /* BrewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71663332A5CCA5C00282463 /* BrewModel.swift */; };
 		E71663362A5CD5A000282463 /* BrewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71663352A5CD5A000282463 /* BrewItem.swift */; };
 		E716633B2A5DEA0700282463 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E716633A2A5DEA0700282463 /* Network.swift */; };
+		E716633E2A5E25F200282463 /* db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E716633C2A5E25F200282463 /* db.xcdatamodeld */; };
+		E71663402A5F11A100282463 /* NotesWCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E716633F2A5F11A100282463 /* NotesWCoreData.swift */; };
+		E71663422A5F16A000282463 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71663412A5F16A000282463 /* Persistance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		E71663332A5CCA5C00282463 /* BrewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewModel.swift; sourceTree = "<group>"; };
 		E71663352A5CD5A000282463 /* BrewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewItem.swift; sourceTree = "<group>"; };
 		E716633A2A5DEA0700282463 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E716633D2A5E25F200282463 /* db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = db.xcdatamodel; sourceTree = "<group>"; };
+		E716633F2A5F11A100282463 /* NotesWCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesWCoreData.swift; sourceTree = "<group>"; };
+		E71663412A5F16A000282463 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		E71663372A5CF10900282463 /* SwiftUIScreen */ = {
 			isa = PBXGroup;
 			children = (
+				E716633F2A5F11A100282463 /* NotesWCoreData.swift */,
 				E71663352A5CD5A000282463 /* BrewItem.swift */,
 				E716632F2A5C914200282463 /* GamesListScreenSwiftUI.swift */,
 			);
@@ -93,8 +100,10 @@
 		E71663382A5CF13700282463 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E716633C2A5E25F200282463 /* db.xcdatamodeld */,
 				E71663332A5CCA5C00282463 /* BrewModel.swift */,
 				E716633A2A5DEA0700282463 /* Network.swift */,
+				E71663412A5F16A000282463 /* Persistance.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -180,8 +189,11 @@
 				E71663322A5C955800282463 /* GamesListViewController.swift in Sources */,
 				E716631C2A5C879800282463 /* ContentView.swift in Sources */,
 				E716633B2A5DEA0700282463 /* Network.swift in Sources */,
+				E71663402A5F11A100282463 /* NotesWCoreData.swift in Sources */,
 				E71663362A5CD5A000282463 /* BrewItem.swift in Sources */,
+				E71663422A5F16A000282463 /* Persistance.swift in Sources */,
 				E71663302A5C914200282463 /* GamesListScreenSwiftUI.swift in Sources */,
+				E716633E2A5E25F200282463 /* db.xcdatamodeld in Sources */,
 				E71663342A5CCA5C00282463 /* BrewModel.swift in Sources */,
 				E716631A2A5C879800282463 /* iOS_Portfolio_ProjectApp.swift in Sources */,
 			);
@@ -382,6 +394,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E716633C2A5E25F200282463 /* db.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E716633D2A5E25F200282463 /* db.xcdatamodel */,
+			);
+			currentVersion = E716633D2A5E25F200282463 /* db.xcdatamodel */;
+			path = db.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E716630E2A5C879800282463 /* Project object */;
 }
